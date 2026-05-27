@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="calculator.css" />
     <title>Calculator</title>
   </head>
 
@@ -41,20 +41,4 @@
       </div>
     </div>
   </body>
-
-  <script>
-    const buttons = document.querySelectorAll("button");
-    const outputResult = document.querySelector("#result");
-    /* ---- TEST ----
-    buttons.forEach(button => {
-        console.log(button.textContent);
-    });
-    */
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", function(event) {
-        outputResult.value += event.target.textContent;
-      });
-    });
-  </script>
 </html>
