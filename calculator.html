@@ -18,27 +18,33 @@
         </div>
 
         <div class="mainBody">
-          <button type="button">AC</button>
-          <button type="button">+/-</button>
-          <button type="button">%</button>
-          <button type="button">/</button>
+          <button type="button" id="acBtn">AC</button>
+          <button type="button" id="plusOrMinusBtn">+/-</button>
+          <button type="button" id="pourcentageBtn">%</button>
+          <button type="button" id="divideBtn">/</button>
           <button type="button">7</button>
           <button type="button">8</button>
           <button type="button">9</button>
-          <button type="button">x</button>
+          <button type="button" id="multiplyBtn">x</button>
           <button type="button">4</button>
           <button type="button">5</button>
           <button type="button">6</button>
-          <button type="button">-</button>
+          <button type="button" id="minusBtn">-</button>
           <button type="button">1</button>
           <button type="button">2</button>
           <button type="button">3</button>
-          <button type="button">+</button>
+          <button type="button" id="plusBtn">+</button>
           <button type="button" class="zeroBtn">0</button>
-          <button type="button">.</button>
-          <button type="button">=</button>
+          <button type="button" id="dotBtn">.</button>
+          <button type="button" id="equalBtn">=</button>
         </div>
       </div>
     </div>
+
+    <!-- SCRIPTS MUST ALWAYS BE AT THE BOTTOM OF THE HTML, NOT AT THE TOP OR IN THE HEAD 
+        HTML files are read from top to bottom, so if JS file is linked at the top, it will read that
+        before the HTML content 
+    -->
+    <script src="calculator.js"></script>
   </body>
 </html>
